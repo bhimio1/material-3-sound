@@ -1,0 +1,26 @@
+[package]
+name = "material_3_sound"
+version = "0.1.0"
+edition = "2021"
+description = "A Material 3 patchbay and mixer for PipeWire: draw cords between apps, effects and devices"
+license = "MIT"
+repository = "https://github.com/bhimio1/material-3-sound"
+
+[[bin]]
+name = "m3-sound"
+path = "src/main.rs"
+
+[dependencies]
+material-3-ui = { git = "https://github.com/bhimio1/material-3-ui", rev = "81c14000c29fb3cfefb0b77344b110a518bfed45" }
+egui = "0.37"
+eframe = { version = "0.37", default-features = false, features = ["default_fonts", "glow", "wayland", "x11"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+flume = "0.11"
+dirs = "6"
+
+[dev-dependencies]
+tempfile = "3"
+
+[profile.release]
+lto = "thin"

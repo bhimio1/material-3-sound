@@ -1,0 +1,1947 @@
+[
+ {
+  "id": 0,
+  "type": "PipeWire:Interface:Core",
+  "version": 4,
+  "permissions": [
+   "r",
+   "x",
+   "m"
+  ],
+  "info": {
+   "cookie": 301961487,
+   "user-name": "root",
+   "host-name": "vm",
+   "version": "1.0.5",
+   "name": "pipewire-0",
+   "change-mask": [
+    "props"
+   ],
+   "props": {
+    "clock.power-of-two-quantum": true,
+    "config.name": "pipewire.conf",
+    "core.daemon": true,
+    "core.name": "pipewire-0",
+    "cpu.max-align": 64,
+    "default.clock.max-quantum": 2048,
+    "default.clock.min-quantum": 32,
+    "default.clock.quantum": 1024,
+    "default.clock.quantum-floor": 4,
+    "default.clock.quantum-limit": 8192,
+    "default.clock.rate": 48000,
+    "default.video.height": 480,
+    "default.video.rate.denom": 1,
+    "default.video.rate.num": 25,
+    "default.video.width": 640,
+    "link.max-buffers": 16,
+    "log.level": 2,
+    "mem.allow-mlock": true,
+    "mem.warn-mlock": false,
+    "module.access": true,
+    "module.jackdbus-detect": true,
+    "module.x11.bell": true,
+    "object.id": 0,
+    "object.serial": 0,
+    "settings.check-quantum": false,
+    "settings.check-rate": false
+   }
+  }
+ },
+ {
+  "id": 29,
+  "type": "PipeWire:Interface:Node",
+  "version": 3,
+  "permissions": [
+   "r",
+   "w",
+   "x",
+   "m"
+  ],
+  "info": {
+   "max-input-ports": 0,
+   "max-output-ports": 0,
+   "change-mask": [
+    "input-ports",
+    "output-ports",
+    "state",
+    "props",
+    "params"
+   ],
+   "n-input-ports": 0,
+   "n-output-ports": 0,
+   "state": "suspended",
+   "error": null,
+   "props": {
+    "clock.id": "monotonic",
+    "clock.name": "clock.system.monotonic",
+    "clock.quantum-limit": 8192,
+    "factory.id": 10,
+    "factory.name": "support.node.driver",
+    "node.driver": true,
+    "node.group": "pipewire.dummy",
+    "node.name": "Dummy-Driver",
+    "object.id": 29,
+    "object.serial": 29,
+    "priority.driver": 20000
+   },
+   "params": {}
+  }
+ },
+ {
+  "id": 30,
+  "type": "PipeWire:Interface:Node",
+  "version": 3,
+  "permissions": [
+   "r",
+   "w",
+   "x",
+   "m"
+  ],
+  "info": {
+   "max-input-ports": 0,
+   "max-output-ports": 0,
+   "change-mask": [
+    "input-ports",
+    "output-ports",
+    "state",
+    "props",
+    "params"
+   ],
+   "n-input-ports": 0,
+   "n-output-ports": 0,
+   "state": "suspended",
+   "error": null,
+   "props": {
+    "clock.id": "monotonic",
+    "clock.name": "clock.system.monotonic",
+    "clock.quantum-limit": 8192,
+    "factory.id": 10,
+    "factory.name": "support.node.driver",
+    "node.driver": true,
+    "node.freewheel": true,
+    "node.group": "pipewire.freewheel",
+    "node.name": "Freewheel-Driver",
+    "object.id": 30,
+    "object.serial": 30,
+    "priority.driver": 19000
+   },
+   "params": {}
+  }
+ },
+ {
+  "id": 31,
+  "type": "PipeWire:Interface:Metadata",
+  "version": 3,
+  "permissions": [
+   "r",
+   "w",
+   "x"
+  ],
+  "props": {
+   "metadata.name": "settings",
+   "object.serial": 31
+  },
+  "metadata": [
+   {
+    "subject": 0,
+    "key": "log.level",
+    "type": "",
+    "value": 2
+   },
+   {
+    "subject": 0,
+    "key": "clock.rate",
+    "type": "",
+    "value": 48000
+   },
+   {
+    "subject": 0,
+    "key": "clock.allowed-rates",
+    "type": "",
+    "value": "[ 48000 ]"
+   },
+   {
+    "subject": 0,
+    "key": "clock.quantum",
+    "type": "",
+    "value": 1024
+   },
+   {
+    "subject": 0,
+    "key": "clock.min-quantum",
+    "type": "",
+    "value": 32
+   },
+   {
+    "subject": 0,
+    "key": "clock.max-quantum",
+    "type": "",
+    "value": 2048
+   },
+   {
+    "subject": 0,
+    "key": "clock.force-quantum",
+    "type": "",
+    "value": 0
+   },
+   {
+    "subject": 0,
+    "key": "clock.force-rate",
+    "type": "",
+    "value": 0
+   }
+  ]
+ },
+ {
+  "id": 32,
+  "type": "PipeWire:Interface:Client",
+  "version": 3,
+  "permissions": [
+   "r",
+   "w",
+   "x",
+   "m"
+  ],
+  "info": {
+   "change-mask": [
+    "props"
+   ],
+   "props": {
+    "application.name": "WirePlumber",
+    "application.process.binary": "wireplumber",
+    "application.process.host": "vm",
+    "application.process.id": 1229,
+    "application.process.user": "root",
+    "clock.power-of-two-quantum": true,
+    "config.name": "/usr/share/wireplumber/wireplumber.conf",
+    "core.name": "pipewire-root-1229",
+    "core.version": "1.0.5",
+    "cpu.max-align": 64,
+    "default.clock.max-quantum": 2048,
+    "default.clock.min-quantum": 32,
+    "default.clock.quantum": 1024,
+    "default.clock.quantum-floor": 4,
+    "default.clock.quantum-limit": 8192,
+    "default.clock.rate": 48000,
+    "default.video.height": 480,
+    "default.video.rate.denom": 1,
+    "default.video.rate.num": 25,
+    "default.video.width": 640,
+    "link.max-buffers": 64,
+    "log.level": 2,
+    "mem.allow-mlock": true,
+    "mem.warn-mlock": false,
+    "module.id": 2,
+    "object.id": 32,
+    "object.serial": 32,
+    "pipewire.access": "unrestricted",
+    "pipewire.protocol": "protocol-native",
+    "pipewire.sec.gid": 0,
+    "pipewire.sec.label": "kernel",
+    "pipewire.sec.pid": 1229,
+    "pipewire.sec.socket": "pipewire-0",
+    "pipewire.sec.uid": 0,
+    "settings.check-quantum": false,
+    "settings.check-rate": false,
+    "wireplumber.daemon": true,
+    "wireplumber.export-core": true,
+    "wireplumber.script-engine": "lua-scripting"
+   }
+  }
+ },
+ {
+  "id": 33,
+  "type": "PipeWire:Interface:Client",
+  "version": 3,
+  "permissions": [
+   "r",
+   "w",
+   "x",
+   "m"
+  ],
+  "info": {
+   "change-mask": [
+    "props"
+   ],
+   "props": {
+    "application.name": "WirePlumber [export]",
+    "application.process.binary": "wireplumber",
+    "application.process.host": "vm",
+    "application.process.id": 1229,
+    "application.process.user": "root",
+    "clock.power-of-two-quantum": true,
+    "config.name": "/usr/share/wireplumber/wireplumber.conf",
+    "core.name": "pipewire-root-1229",
+    "core.version": "1.0.5",
+    "cpu.max-align": 64,
+    "default.clock.max-quantum": 2048,
+    "default.clock.min-quantum": 32,
+    "default.clock.quantum": 1024,
+    "default.clock.quantum-floor": 4,
+    "default.clock.quantum-limit": 8192,
+    "default.clock.rate": 48000,
+    "default.video.height": 480,
+    "default.video.rate.denom": 1,
+    "default.video.rate.num": 25,
+    "default.video.width": 640,
+    "link.max-buffers": 64,
+    "log.level": 2,
+    "mem.allow-mlock": true,
+    "mem.warn-mlock": false,
+    "module.id": 2,
+    "object.id": 33,
+    "object.serial": 33,
+    "pipewire.access": "unrestricted",
+    "pipewire.protocol": "protocol-native",
+    "pipewire.sec.gid": 0,
+    "pipewire.sec.label": "kernel",
+    "pipewire.sec.pid": 1229,
+    "pipewire.sec.socket": "pipewire-0",
+    "pipewire.sec.uid": 0,
+    "settings.check-quantum": false,
+    "settings.check-rate": false,
+    "wireplumber.daemon": true,
+    "wireplumber.export-core": true,
+    "wireplumber.script-engine": "lua-scripting"
+   }
+  }
+ },
+ {
+  "id": 34,
+  "type": "PipeWire:Interface:Metadata",
+  "version": 3,
+  "permissions": [
+   "r",
+   "w",
+   "x"
+  ],
+  "props": {
+   "client.id": 32,
+   "factory.id": 6,
+   "metadata.name": "default",
+   "module.id": 5,
+   "object.serial": 34
+  },
+  "metadata": [
+   {
+    "subject": 0,
+    "key": "default.audio.sink",
+    "type": "Spa:String:JSON",
+    "value": {
+     "name": "test_headphones"
+    }
+   },
+   {
+    "subject": 0,
+    "key": "default.audio.source",
+    "type": "Spa:String:JSON",
+    "value": {
+     "name": "test_mic"
+    }
+   },
+   {
+    "subject": 0,
+    "key": "default.configured.audio.sink",
+    "type": "Spa:String:JSON",
+    "value": {
+     "name": "test_headphones"
+    }
+   }
+  ]
+ },
+ {
+  "id": 38,
+  "type": "PipeWire:Interface:Node",
+  "version": 3,
+  "permissions": [
+   "r",
+   "w",
+   "x",
+   "m"
+  ],
+  "info": {
+   "max-input-ports": 65,
+   "max-output-ports": 0,
+   "change-mask": [
+    "input-ports",
+    "output-ports",
+    "state",
+    "props",
+    "params"
+   ],
+   "n-input-ports": 2,
+   "n-output-ports": 2,
+   "state": "suspended",
+   "error": null,
+   "props": {
+    "audio.adapt.follower": "",
+    "audio.position": "[FL FR]",
+    "clock.quantum-limit": 8192,
+    "factory.id": 18,
+    "factory.mode": "merge",
+    "factory.name": "support.null-audio-sink",
+    "library.name": "audioconvert/libspa-audioconvert",
+    "media.class": "Audio/Sink",
+    "monitor.channel-volumes": true,
+    "node.description": "Speakers",
+    "node.driver": true,
+    "node.name": "test_speakers",
+    "object.id": 38,
+    "object.linger": true,
+    "object.serial": 39
+   },
+   "params": {
+    "Props": [
+     {
+      "volume": 1.0,
+      "mute": false,
+      "channelVolumes": [
+       1.0,
+       1.0
+      ],
+      "channelMap": [
+       "FL",
+       "FR"
+      ],
+      "softMute": false,
+      "softVolumes": [
+       1.0,
+       1.0
+      ],
+      "monitorMute": false,
+      "monitorVolumes": [
+       1.0,
+       1.0
+      ],
+      "params": [
+       "monitor.channel-volumes",
+       true,
+       "channelmix.disable",
+       false,
+       "channelmix.min-volume",
+       0.0,
+       "channelmix.max-volume",
+       10.0,
+       "channelmix.normalize",
+       false,
+       "channelmix.mix-lfe",
+       true,
+       "channelmix.upmix",
+       true,
+       "channelmix.lfe-cutoff",
+       0.0,
+       "channelmix.fc-cutoff",
+       0.0,
+       "channelmix.rear-delay",
+       0.0,
+       "channelmix.stereo-widen",
+       0.0,
+       "channelmix.hilbert-taps",
+       0,
+       "channelmix.upmix-method",
+       "none",
+       "resample.quality",
+       4,
+       "resample.disable",
+       false,
+       "dither.noise",
+       0,
+       "dither.method",
+       "none",
+       "debug.wav-path",
+       "",
+       "channelmix.lock-volumes",
+       false
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 37,
+  "type": "PipeWire:Interface:Port",
+  "version": 3,
+  "permissions": [
+   "r",
+   "x",
+   "m"
+  ],
+  "info": {
+   "direction": "input",
+   "change-mask": [
+    "props",
+    "params"
+   ],
+   "props": {
+    "audio.channel": "FL",
+    "format.dsp": "32 bit float mono audio",
+    "node.id": 38,
+    "object.id": 37,
+    "object.path": "test_speakers:playback_0",
+    "object.serial": 40,
+    "port.alias": "Speakers:playback_FL",
+    "port.direction": "in",
+    "port.id": 0,
+    "port.name": "playback_FL"
+   },
+   "params": {}
+  }
+ },
+ {
+  "id": 39,
+  "type": "PipeWire:Interface:Port",
+  "version": 3,
+  "permissions": [
+   "r",
+   "x",
+   "m"
+  ],
+  "info": {
+   "direction": "output",
+   "change-mask": [
+    "props",
+    "params"
+   ],
+   "props": {
+    "audio.channel": "FL",
+    "format.dsp": "32 bit float mono audio",
+    "node.id": 38,
+    "object.id": 39,
+    "object.path": "test_speakers:monitor_0",
+    "object.serial": 41,
+    "port.alias": "Speakers:monitor_FL",
+    "port.direction": "out",
+    "port.id": 0,
+    "port.monitor": true,
+    "port.name": "monitor_FL"
+   },
+   "params": {}
+  }
+ },
+ {
+  "id": 40,
+  "type": "PipeWire:Interface:Port",
+  "version": 3,
+  "permissions": [
+   "r",
+   "x",
+   "m"
+  ],
+  "info": {
+   "direction": "input",
+   "change-mask": [
+    "props",
+    "params"
+   ],
+   "props": {
+    "audio.channel": "FR",
+    "format.dsp": "32 bit float mono audio",
+    "node.id": 38,
+    "object.id": 40,
+    "object.path": "test_speakers:playback_1",
+    "object.serial": 42,
+    "port.alias": "Speakers:playback_FR",
+    "port.direction": "in",
+    "port.id": 1,
+    "port.name": "playback_FR"
+   },
+   "params": {}
+  }
+ },
+ {
+  "id": 41,
+  "type": "PipeWire:Interface:Port",
+  "version": 3,
+  "permissions": [
+   "r",
+   "x",
+   "m"
+  ],
+  "info": {
+   "direction": "output",
+   "change-mask": [
+    "props",
+    "params"
+   ],
+   "props": {
+    "audio.channel": "FR",
+    "format.dsp": "32 bit float mono audio",
+    "node.id": 38,
+    "object.id": 41,
+    "object.path": "test_speakers:monitor_1",
+    "object.serial": 43,
+    "port.alias": "Speakers:monitor_FR",
+    "port.direction": "out",
+    "port.id": 1,
+    "port.monitor": true,
+    "port.name": "monitor_FR"
+   },
+   "params": {}
+  }
+ },
+ {
+  "id": 43,
+  "type": "PipeWire:Interface:Node",
+  "version": 3,
+  "permissions": [
+   "r",
+   "w",
+   "x",
+   "m"
+  ],
+  "info": {
+   "max-input-ports": 65,
+   "max-output-ports": 0,
+   "change-mask": [
+    "input-ports",
+    "output-ports",
+    "state",
+    "props",
+    "params"
+   ],
+   "n-input-ports": 2,
+   "n-output-ports": 2,
+   "state": "running",
+   "error": null,
+   "props": {
+    "audio.adapt.follower": "",
+    "audio.position": "[FL FR]",
+    "clock.quantum-limit": 8192,
+    "factory.id": 18,
+    "factory.mode": "merge",
+    "factory.name": "support.null-audio-sink",
+    "library.name": "audioconvert/libspa-audioconvert",
+    "media.class": "Audio/Sink",
+    "node.description": "USB Headphones",
+    "node.driver": true,
+    "node.name": "test_headphones",
+    "object.id": 43,
+    "object.linger": true,
+    "object.serial": 45
+   },
+   "params": {
+    "Props": [
+     {
+      "volume": 1.0,
+      "mute": false,
+      "channelVolumes": [
+       1.0,
+       1.0
+      ],
+      "channelMap": [
+       "FL",
+       "FR"
+      ],
+      "softMute": false,
+      "softVolumes": [
+       1.0,
+       1.0
+      ],
+      "monitorMute": false,
+      "monitorVolumes": [
+       1.0,
+       1.0
+      ],
+      "params": [
+       "monitor.channel-volumes",
+       false,
+       "channelmix.disable",
+       false,
+       "channelmix.min-volume",
+       0.0,
+       "channelmix.max-volume",
+       10.0,
+       "channelmix.normalize",
+       false,
+       "channelmix.mix-lfe",
+       true,
+       "channelmix.upmix",
+       true,
+       "channelmix.lfe-cutoff",
+       0.0,
+       "channelmix.fc-cutoff",
+       0.0,
+       "channelmix.rear-delay",
+       0.0,
+       "channelmix.stereo-widen",
+       0.0,
+       "channelmix.hilbert-taps",
+       0,
+       "channelmix.upmix-method",
+       "none",
+       "resample.quality",
+       4,
+       "resample.disable",
+       false,
+       "dither.noise",
+       0,
+       "dither.method",
+       "none",
+       "debug.wav-path",
+       "",
+       "channelmix.lock-volumes",
+       false
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 42,
+  "type": "PipeWire:Interface:Port",
+  "version": 3,
+  "permissions": [
+   "r",
+   "x",
+   "m"
+  ],
+  "info": {
+   "direction": "input",
+   "change-mask": [
+    "props",
+    "params"
+   ],
+   "props": {
+    "audio.channel": "FL",
+    "format.dsp": "32 bit float mono audio",
+    "node.id": 43,
+    "object.id": 42,
+    "object.path": "test_headphones:playback_0",
+    "object.serial": 46,
+    "port.alias": "USB Headphones:playback_FL",
+    "port.direction": "in",
+    "port.id": 0,
+    "port.name": "playback_FL"
+   },
+   "params": {}
+  }
+ },
+ {
+  "id": 44,
+  "type": "PipeWire:Interface:Port",
+  "version": 3,
+  "permissions": [
+   "r",
+   "x",
+   "m"
+  ],
+  "info": {
+   "direction": "output",
+   "change-mask": [
+    "props",
+    "params"
+   ],
+   "props": {
+    "audio.channel": "FL",
+    "format.dsp": "32 bit float mono audio",
+    "node.id": 43,
+    "object.id": 44,
+    "object.path": "test_headphones:monitor_0",
+    "object.serial": 47,
+    "port.alias": "USB Headphones:monitor_FL",
+    "port.direction": "out",
+    "port.id": 0,
+    "port.monitor": true,
+    "port.name": "monitor_FL"
+   },
+   "params": {}
+  }
+ },
+ {
+  "id": 45,
+  "type": "PipeWire:Interface:Port",
+  "version": 3,
+  "permissions": [
+   "r",
+   "x",
+   "m"
+  ],
+  "info": {
+   "direction": "input",
+   "change-mask": [
+    "props",
+    "params"
+   ],
+   "props": {
+    "audio.channel": "FR",
+    "format.dsp": "32 bit float mono audio",
+    "node.id": 43,
+    "object.id": 45,
+    "object.path": "test_headphones:playback_1",
+    "object.serial": 48,
+    "port.alias": "USB Headphones:playback_FR",
+    "port.direction": "in",
+    "port.id": 1,
+    "port.name": "playback_FR"
+   },
+   "params": {}
+  }
+ },
+ {
+  "id": 46,
+  "type": "PipeWire:Interface:Port",
+  "version": 3,
+  "permissions": [
+   "r",
+   "x",
+   "m"
+  ],
+  "info": {
+   "direction": "output",
+   "change-mask": [
+    "props",
+    "params"
+   ],
+   "props": {
+    "audio.channel": "FR",
+    "format.dsp": "32 bit float mono audio",
+    "node.id": 43,
+    "object.id": 46,
+    "object.path": "test_headphones:monitor_1",
+    "object.serial": 49,
+    "port.alias": "USB Headphones:monitor_FR",
+    "port.direction": "out",
+    "port.id": 1,
+    "port.monitor": true,
+    "port.name": "monitor_FR"
+   },
+   "params": {}
+  }
+ },
+ {
+  "id": 48,
+  "type": "PipeWire:Interface:Node",
+  "version": 3,
+  "permissions": [
+   "r",
+   "w",
+   "x",
+   "m"
+  ],
+  "info": {
+   "max-input-ports": 65,
+   "max-output-ports": 0,
+   "change-mask": [
+    "input-ports",
+    "output-ports",
+    "state",
+    "props",
+    "params"
+   ],
+   "n-input-ports": 1,
+   "n-output-ports": 1,
+   "state": "suspended",
+   "error": null,
+   "props": {
+    "audio.adapt.follower": "",
+    "audio.position": "[MONO]",
+    "clock.quantum-limit": 8192,
+    "factory.id": 18,
+    "factory.mode": "merge",
+    "factory.name": "support.null-audio-sink",
+    "library.name": "audioconvert/libspa-audioconvert",
+    "media.class": "Audio/Source/Virtual",
+    "node.description": "Microphone",
+    "node.driver": true,
+    "node.name": "test_mic",
+    "object.id": 48,
+    "object.linger": true,
+    "object.serial": 51
+   },
+   "params": {
+    "Props": [
+     {
+      "volume": 1.0,
+      "mute": false,
+      "channelVolumes": [
+       1.0,
+       1.0
+      ],
+      "channelMap": [
+       "MONO"
+      ],
+      "softMute": false,
+      "softVolumes": [
+       1.0
+      ],
+      "monitorMute": false,
+      "monitorVolumes": [
+       1.0
+      ],
+      "params": [
+       "monitor.channel-volumes",
+       false,
+       "channelmix.disable",
+       false,
+       "channelmix.min-volume",
+       0.0,
+       "channelmix.max-volume",
+       10.0,
+       "channelmix.normalize",
+       false,
+       "channelmix.mix-lfe",
+       true,
+       "channelmix.upmix",
+       true,
+       "channelmix.lfe-cutoff",
+       0.0,
+       "channelmix.fc-cutoff",
+       0.0,
+       "channelmix.rear-delay",
+       0.0,
+       "channelmix.stereo-widen",
+       0.0,
+       "channelmix.hilbert-taps",
+       0,
+       "channelmix.upmix-method",
+       "none",
+       "resample.quality",
+       4,
+       "resample.disable",
+       false,
+       "dither.noise",
+       0,
+       "dither.method",
+       "none",
+       "debug.wav-path",
+       "",
+       "channelmix.lock-volumes",
+       false
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 47,
+  "type": "PipeWire:Interface:Port",
+  "version": 3,
+  "permissions": [
+   "r",
+   "x",
+   "m"
+  ],
+  "info": {
+   "direction": "input",
+   "change-mask": [
+    "props",
+    "params"
+   ],
+   "props": {
+    "audio.channel": "MONO",
+    "format.dsp": "32 bit float mono audio",
+    "node.id": 48,
+    "object.id": 47,
+    "object.path": "test_mic:input_0",
+    "object.serial": 52,
+    "port.alias": "Microphone:input_MONO",
+    "port.direction": "in",
+    "port.id": 0,
+    "port.name": "input_MONO"
+   },
+   "params": {}
+  }
+ },
+ {
+  "id": 49,
+  "type": "PipeWire:Interface:Port",
+  "version": 3,
+  "permissions": [
+   "r",
+   "x",
+   "m"
+  ],
+  "info": {
+   "direction": "output",
+   "change-mask": [
+    "props",
+    "params"
+   ],
+   "props": {
+    "audio.channel": "MONO",
+    "format.dsp": "32 bit float mono audio",
+    "node.id": 48,
+    "object.id": 49,
+    "object.path": "test_mic:capture_0",
+    "object.serial": 53,
+    "port.alias": "Microphone:capture_MONO",
+    "port.direction": "out",
+    "port.id": 0,
+    "port.monitor": true,
+    "port.name": "capture_MONO"
+   },
+   "params": {}
+  }
+ },
+ {
+  "id": 50,
+  "type": "PipeWire:Interface:Client",
+  "version": 3,
+  "permissions": [
+   "r",
+   "w",
+   "x",
+   "m"
+  ],
+  "info": {
+   "change-mask": [
+    "props"
+   ],
+   "props": {
+    "application.name": "pw-cat",
+    "application.process.binary": "pw-cat",
+    "application.process.host": "vm",
+    "application.process.id": 1347,
+    "application.process.user": "root",
+    "clock.power-of-two-quantum": true,
+    "config.name": "client-rt.conf",
+    "core.name": "pipewire-root-1347",
+    "core.version": "1.0.5",
+    "cpu.max-align": 64,
+    "default.clock.max-quantum": 2048,
+    "default.clock.min-quantum": 32,
+    "default.clock.quantum": 1024,
+    "default.clock.quantum-floor": 4,
+    "default.clock.quantum-limit": 8192,
+    "default.clock.rate": 48000,
+    "default.video.height": 480,
+    "default.video.rate.denom": 1,
+    "default.video.rate.num": 25,
+    "default.video.width": 640,
+    "link.max-buffers": 64,
+    "log.level": 0,
+    "mem.allow-mlock": true,
+    "mem.warn-mlock": false,
+    "module.id": 2,
+    "object.id": 50,
+    "object.serial": 78,
+    "pipewire.access": "unrestricted",
+    "pipewire.protocol": "protocol-native",
+    "pipewire.sec.gid": 0,
+    "pipewire.sec.label": "kernel",
+    "pipewire.sec.pid": 1347,
+    "pipewire.sec.socket": "pipewire-0",
+    "pipewire.sec.uid": 0,
+    "settings.check-quantum": false,
+    "settings.check-rate": false
+   }
+  }
+ },
+ {
+  "id": 51,
+  "type": "PipeWire:Interface:Node",
+  "version": 3,
+  "permissions": [
+   "r",
+   "w",
+   "x",
+   "m"
+  ],
+  "info": {
+   "max-input-ports": 0,
+   "max-output-ports": 65,
+   "change-mask": [
+    "input-ports",
+    "output-ports",
+    "state",
+    "props",
+    "params"
+   ],
+   "n-input-ports": 0,
+   "n-output-ports": 2,
+   "state": "running",
+   "error": null,
+   "props": {
+    "adapt.follower.spa-node": "",
+    "application.name": "Spotify",
+    "audio.adapt.follower": "",
+    "client.id": 50,
+    "clock.quantum-limit": 8192,
+    "factory.id": 8,
+    "factory.mode": "split",
+    "library.name": "audioconvert/libspa-audioconvert",
+    "media.category": "Playback",
+    "media.class": "Stream/Output/Audio",
+    "media.filename": "tone.wav",
+    "media.format": "WAV (Microsoft)",
+    "media.name": "Lo-fi beats",
+    "media.role": "Music",
+    "media.type": "Audio",
+    "node.autoconnect": true,
+    "node.latency": "4800/48000",
+    "node.name": "spotify",
+    "node.rate": "1/48000",
+    "node.want-driver": true,
+    "object.id": 51,
+    "object.register": false,
+    "object.serial": 79,
+    "stream.is-live": true
+   },
+   "params": {
+    "Props": [
+     {
+      "volume": 1.0,
+      "mute": false,
+      "channelVolumes": [
+       0.5,
+       0.25
+      ],
+      "channelMap": [
+       "FL",
+       "FR"
+      ],
+      "softMute": false,
+      "softVolumes": [
+       1.0,
+       1.0
+      ],
+      "monitorMute": false,
+      "monitorVolumes": [
+       1.0,
+       1.0
+      ],
+      "params": [
+       "monitor.channel-volumes",
+       false,
+       "channelmix.disable",
+       false,
+       "channelmix.min-volume",
+       0.0,
+       "channelmix.max-volume",
+       10.0,
+       "channelmix.normalize",
+       false,
+       "channelmix.mix-lfe",
+       true,
+       "channelmix.upmix",
+       true,
+       "channelmix.lfe-cutoff",
+       0.0,
+       "channelmix.fc-cutoff",
+       0.0,
+       "channelmix.rear-delay",
+       0.0,
+       "channelmix.stereo-widen",
+       0.0,
+       "channelmix.hilbert-taps",
+       0,
+       "channelmix.upmix-method",
+       "none",
+       "resample.quality",
+       4,
+       "resample.disable",
+       false,
+       "dither.noise",
+       0,
+       "dither.method",
+       "none",
+       "debug.wav-path",
+       "",
+       "channelmix.lock-volumes",
+       false
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 53,
+  "type": "PipeWire:Interface:Port",
+  "version": 3,
+  "permissions": [
+   "r",
+   "x",
+   "m"
+  ],
+  "info": {
+   "direction": "output",
+   "change-mask": [
+    "props",
+    "params"
+   ],
+   "props": {
+    "audio.channel": "FL",
+    "format.dsp": "32 bit float mono audio",
+    "node.id": 51,
+    "object.id": 53,
+    "object.path": "spotify:output_0",
+    "object.serial": 80,
+    "port.alias": "spotify:output_FL",
+    "port.direction": "out",
+    "port.id": 0,
+    "port.name": "output_FL"
+   },
+   "params": {}
+  }
+ },
+ {
+  "id": 52,
+  "type": "PipeWire:Interface:Port",
+  "version": 3,
+  "permissions": [
+   "r",
+   "x",
+   "m"
+  ],
+  "info": {
+   "direction": "output",
+   "change-mask": [
+    "props",
+    "params"
+   ],
+   "props": {
+    "audio.channel": "FR",
+    "format.dsp": "32 bit float mono audio",
+    "node.id": 51,
+    "object.id": 52,
+    "object.path": "spotify:output_1",
+    "object.serial": 81,
+    "port.alias": "spotify:output_FR",
+    "port.direction": "out",
+    "port.id": 1,
+    "port.name": "output_FR"
+   },
+   "params": {}
+  }
+ },
+ {
+  "id": 57,
+  "type": "PipeWire:Interface:Link",
+  "version": 3,
+  "permissions": [
+   "r",
+   "x"
+  ],
+  "info": {
+   "output-node-id": 51,
+   "output-port-id": 53,
+   "input-node-id": 43,
+   "input-port-id": 42,
+   "change-mask": [
+    "state",
+    "format",
+    "props"
+   ],
+   "state": "active",
+   "error": null,
+   "format": {
+    "mediaType": "audio",
+    "mediaSubtype": "dsp",
+    "format": "F32P"
+   },
+   "props": {
+    "factory.id": 20,
+    "link.input.node": 43,
+    "link.input.port": 42,
+    "link.output.node": 51,
+    "link.output.port": 53,
+    "object.id": 57,
+    "object.linger": true,
+    "object.serial": 88
+   }
+  }
+ },
+ {
+  "id": 54,
+  "type": "PipeWire:Interface:Link",
+  "version": 3,
+  "permissions": [
+   "r",
+   "x"
+  ],
+  "info": {
+   "output-node-id": 51,
+   "output-port-id": 52,
+   "input-node-id": 43,
+   "input-port-id": 45,
+   "change-mask": [
+    "state",
+    "format",
+    "props"
+   ],
+   "state": "active",
+   "error": null,
+   "format": {
+    "mediaType": "audio",
+    "mediaSubtype": "dsp",
+    "format": "F32P"
+   },
+   "props": {
+    "factory.id": 20,
+    "link.input.node": 43,
+    "link.input.port": 45,
+    "link.output.node": 51,
+    "link.output.port": 52,
+    "object.id": 54,
+    "object.linger": true,
+    "object.serial": 90
+   }
+  }
+ },
+ {
+  "id": 55,
+  "type": "PipeWire:Interface:Client",
+  "version": 3,
+  "permissions": [
+   "r",
+   "w",
+   "x",
+   "m"
+  ],
+  "info": {
+   "change-mask": [
+    "props"
+   ],
+   "props": {
+    "application.name": "pipewire",
+    "application.process.binary": "pipewire",
+    "application.process.host": "vm",
+    "application.process.id": 1393,
+    "application.process.user": "root",
+    "clock.power-of-two-quantum": true,
+    "config.name": "/tmp/claude-0/-home-user/159dfcb1-4780-5827-b89c-ad6c4bd9e503/scratchpad/eq.conf",
+    "core.name": "pipewire-root-1393",
+    "core.version": "1.0.5",
+    "cpu.max-align": 64,
+    "default.clock.max-quantum": 2048,
+    "default.clock.min-quantum": 32,
+    "default.clock.quantum": 1024,
+    "default.clock.quantum-floor": 4,
+    "default.clock.quantum-limit": 8192,
+    "default.clock.rate": 48000,
+    "default.video.height": 480,
+    "default.video.rate.denom": 1,
+    "default.video.rate.num": 25,
+    "default.video.width": 640,
+    "link.max-buffers": 64,
+    "log.level": 0,
+    "mem.allow-mlock": true,
+    "mem.warn-mlock": false,
+    "module.id": 2,
+    "object.id": 55,
+    "object.serial": 97,
+    "pipewire.access": "unrestricted",
+    "pipewire.protocol": "protocol-native",
+    "pipewire.sec.gid": 0,
+    "pipewire.sec.label": "kernel",
+    "pipewire.sec.pid": 1393,
+    "pipewire.sec.socket": "pipewire-0",
+    "pipewire.sec.uid": 0,
+    "settings.check-quantum": false,
+    "settings.check-rate": false
+   }
+  }
+ },
+ {
+  "id": 56,
+  "type": "PipeWire:Interface:Node",
+  "version": 3,
+  "permissions": [
+   "r",
+   "w",
+   "x",
+   "m"
+  ],
+  "info": {
+   "max-input-ports": 65,
+   "max-output-ports": 0,
+   "change-mask": [
+    "input-ports",
+    "output-ports",
+    "state",
+    "props",
+    "params"
+   ],
+   "n-input-ports": 2,
+   "n-output-ports": 2,
+   "state": "suspended",
+   "error": null,
+   "props": {
+    "adapt.follower.spa-node": "",
+    "audio.adapt.follower": "",
+    "audio.channels": 2,
+    "audio.position": "[ FL FR ]",
+    "client.id": 55,
+    "clock.quantum-limit": 8192,
+    "factory.id": 6,
+    "factory.mode": "merge",
+    "library.name": "audioconvert/libspa-audioconvert",
+    "media.class": "Audio/Sink",
+    "media.name": "Equalizer",
+    "node.autoconnect": true,
+    "node.description": "Equalizer",
+    "node.group": "filter-chain-1393-7",
+    "node.link-group": "filter-chain-1393-7",
+    "node.name": "m3sound.eq.test",
+    "node.virtual": true,
+    "node.want-driver": true,
+    "object.id": 56,
+    "object.register": false,
+    "object.serial": 98,
+    "resample.disable": true,
+    "resample.prefill": true,
+    "stream.is-live": true
+   },
+   "params": {
+    "Props": [
+     {
+      "volume": 1.0,
+      "mute": false,
+      "channelVolumes": [
+       1.0,
+       1.0
+      ],
+      "channelMap": [
+       "FL",
+       "FR"
+      ],
+      "softMute": false,
+      "softVolumes": [
+       1.0,
+       1.0
+      ],
+      "monitorMute": false,
+      "monitorVolumes": [
+       1.0,
+       1.0
+      ],
+      "params": [
+       "monitor.channel-volumes",
+       false,
+       "channelmix.disable",
+       false,
+       "channelmix.min-volume",
+       0.0,
+       "channelmix.max-volume",
+       10.0,
+       "channelmix.normalize",
+       false,
+       "channelmix.mix-lfe",
+       true,
+       "channelmix.upmix",
+       true,
+       "channelmix.lfe-cutoff",
+       0.0,
+       "channelmix.fc-cutoff",
+       0.0,
+       "channelmix.rear-delay",
+       0.0,
+       "channelmix.stereo-widen",
+       0.0,
+       "channelmix.hilbert-taps",
+       0,
+       "channelmix.upmix-method",
+       "none",
+       "resample.quality",
+       4,
+       "resample.disable",
+       true,
+       "dither.noise",
+       0,
+       "dither.method",
+       "none",
+       "debug.wav-path",
+       "",
+       "channelmix.lock-volumes",
+       false
+      ]
+     },
+     {
+      "params": [
+       "preamp:Freq",
+       0.0,
+       "preamp:Q",
+       1.0,
+       "preamp:Gain",
+       0.0,
+       "preamp:b0",
+       1.0,
+       "preamp:b1",
+       0.0,
+       "preamp:b2",
+       0.0,
+       "preamp:a0",
+       1.0,
+       "preamp:a1",
+       0.0,
+       "preamp:a2",
+       0.0,
+       "band1:Freq",
+       105.0,
+       "band1:Q",
+       0.7,
+       "band1:Gain",
+       0.0,
+       "band1:b0",
+       1.0,
+       "band1:b1",
+       0.0,
+       "band1:b2",
+       0.0,
+       "band1:a0",
+       1.0,
+       "band1:a1",
+       0.0,
+       "band1:a2",
+       0.0,
+       "band2:Freq",
+       1000.0,
+       "band2:Q",
+       1.0,
+       "band2:Gain",
+       0.0,
+       "band2:b0",
+       1.0,
+       "band2:b1",
+       0.0,
+       "band2:b2",
+       0.0,
+       "band2:a0",
+       1.0,
+       "band2:a1",
+       0.0,
+       "band2:a2",
+       0.0
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 58,
+  "type": "PipeWire:Interface:Node",
+  "version": 3,
+  "permissions": [
+   "r",
+   "w",
+   "x",
+   "m"
+  ],
+  "info": {
+   "max-input-ports": 0,
+   "max-output-ports": 65,
+   "change-mask": [
+    "input-ports",
+    "output-ports",
+    "state",
+    "props",
+    "params"
+   ],
+   "n-input-ports": 0,
+   "n-output-ports": 2,
+   "state": "suspended",
+   "error": null,
+   "props": {
+    "adapt.follower.spa-node": "",
+    "audio.adapt.follower": "",
+    "audio.channels": 2,
+    "audio.position": "[ FL FR ]",
+    "client.id": 55,
+    "clock.quantum-limit": 8192,
+    "factory.id": 6,
+    "factory.mode": "split",
+    "library.name": "audioconvert/libspa-audioconvert",
+    "media.class": "Stream/Output/Audio",
+    "media.name": "Equalizer",
+    "node.autoconnect": true,
+    "node.description": "Equalizer",
+    "node.group": "filter-chain-1393-7",
+    "node.link-group": "filter-chain-1393-7",
+    "node.name": "m3sound.eq.test.out",
+    "node.passive": true,
+    "node.trigger": true,
+    "node.virtual": true,
+    "node.want-driver": true,
+    "object.id": 58,
+    "object.register": false,
+    "object.serial": 99,
+    "resample.disable": true,
+    "resample.prefill": true,
+    "stream.is-live": true
+   },
+   "params": {
+    "Props": [
+     {
+      "volume": 1.0,
+      "mute": false,
+      "channelVolumes": [
+       1.0,
+       1.0
+      ],
+      "channelMap": [
+       "FL",
+       "FR"
+      ],
+      "softMute": false,
+      "softVolumes": [
+       1.0,
+       1.0
+      ],
+      "monitorMute": false,
+      "monitorVolumes": [
+       1.0,
+       1.0
+      ],
+      "params": [
+       "monitor.channel-volumes",
+       false,
+       "channelmix.disable",
+       false,
+       "channelmix.min-volume",
+       0.0,
+       "channelmix.max-volume",
+       10.0,
+       "channelmix.normalize",
+       false,
+       "channelmix.mix-lfe",
+       true,
+       "channelmix.upmix",
+       true,
+       "channelmix.lfe-cutoff",
+       0.0,
+       "channelmix.fc-cutoff",
+       0.0,
+       "channelmix.rear-delay",
+       0.0,
+       "channelmix.stereo-widen",
+       0.0,
+       "channelmix.hilbert-taps",
+       0,
+       "channelmix.upmix-method",
+       "none",
+       "resample.quality",
+       4,
+       "resample.disable",
+       true,
+       "dither.noise",
+       0,
+       "dither.method",
+       "none",
+       "debug.wav-path",
+       "",
+       "channelmix.lock-volumes",
+       false
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": 59,
+  "type": "PipeWire:Interface:Port",
+  "version": 3,
+  "permissions": [
+   "r",
+   "x",
+   "m"
+  ],
+  "info": {
+   "direction": "output",
+   "change-mask": [
+    "props",
+    "params"
+   ],
+   "props": {
+    "audio.channel": "FL",
+    "format.dsp": "32 bit float mono audio",
+    "node.id": 58,
+    "object.id": 59,
+    "object.path": "m3sound.eq.test.out:output_0",
+    "object.serial": 100,
+    "port.alias": "Equalizer:output_FL",
+    "port.direction": "out",
+    "port.id": 0,
+    "port.name": "output_FL"
+   },
+   "params": {}
+  }
+ },
+ {
+  "id": 60,
+  "type": "PipeWire:Interface:Port",
+  "version": 3,
+  "permissions": [
+   "r",
+   "x",
+   "m"
+  ],
+  "info": {
+   "direction": "output",
+   "change-mask": [
+    "props",
+    "params"
+   ],
+   "props": {
+    "audio.channel": "FR",
+    "format.dsp": "32 bit float mono audio",
+    "node.id": 58,
+    "object.id": 60,
+    "object.path": "m3sound.eq.test.out:output_1",
+    "object.serial": 101,
+    "port.alias": "Equalizer:output_FR",
+    "port.direction": "out",
+    "port.id": 1,
+    "port.name": "output_FR"
+   },
+   "params": {}
+  }
+ },
+ {
+  "id": 61,
+  "type": "PipeWire:Interface:Port",
+  "version": 3,
+  "permissions": [
+   "r",
+   "x",
+   "m"
+  ],
+  "info": {
+   "direction": "input",
+   "change-mask": [
+    "props",
+    "params"
+   ],
+   "props": {
+    "audio.channel": "FL",
+    "format.dsp": "32 bit float mono audio",
+    "node.id": 56,
+    "object.id": 61,
+    "object.path": "m3sound.eq.test:playback_0",
+    "object.serial": 102,
+    "port.alias": "Equalizer:playback_FL",
+    "port.direction": "in",
+    "port.id": 0,
+    "port.name": "playback_FL"
+   },
+   "params": {}
+  }
+ },
+ {
+  "id": 62,
+  "type": "PipeWire:Interface:Port",
+  "version": 3,
+  "permissions": [
+   "r",
+   "x",
+   "m"
+  ],
+  "info": {
+   "direction": "output",
+   "change-mask": [
+    "props",
+    "params"
+   ],
+   "props": {
+    "audio.channel": "FL",
+    "format.dsp": "32 bit float mono audio",
+    "node.id": 56,
+    "object.id": 62,
+    "object.path": "m3sound.eq.test:monitor_0",
+    "object.serial": 103,
+    "port.alias": "Equalizer:monitor_FL",
+    "port.direction": "out",
+    "port.id": 0,
+    "port.monitor": true,
+    "port.name": "monitor_FL"
+   },
+   "params": {}
+  }
+ },
+ {
+  "id": 63,
+  "type": "PipeWire:Interface:Port",
+  "version": 3,
+  "permissions": [
+   "r",
+   "x",
+   "m"
+  ],
+  "info": {
+   "direction": "input",
+   "change-mask": [
+    "props",
+    "params"
+   ],
+   "props": {
+    "audio.channel": "FR",
+    "format.dsp": "32 bit float mono audio",
+    "node.id": 56,
+    "object.id": 63,
+    "object.path": "m3sound.eq.test:playback_1",
+    "object.serial": 104,
+    "port.alias": "Equalizer:playback_FR",
+    "port.direction": "in",
+    "port.id": 1,
+    "port.name": "playback_FR"
+   },
+   "params": {}
+  }
+ },
+ {
+  "id": 64,
+  "type": "PipeWire:Interface:Port",
+  "version": 3,
+  "permissions": [
+   "r",
+   "x",
+   "m"
+  ],
+  "info": {
+   "direction": "output",
+   "change-mask": [
+    "props",
+    "params"
+   ],
+   "props": {
+    "audio.channel": "FR",
+    "format.dsp": "32 bit float mono audio",
+    "node.id": 56,
+    "object.id": 64,
+    "object.path": "m3sound.eq.test:monitor_1",
+    "object.serial": 105,
+    "port.alias": "Equalizer:monitor_FR",
+    "port.direction": "out",
+    "port.id": 1,
+    "port.monitor": true,
+    "port.name": "monitor_FR"
+   },
+   "params": {}
+  }
+ },
+ {
+  "id": 65,
+  "type": "PipeWire:Interface:Link",
+  "version": 3,
+  "permissions": [
+   "r",
+   "x"
+  ],
+  "info": {
+   "output-node-id": 58,
+   "output-port-id": 59,
+   "input-node-id": 43,
+   "input-port-id": 42,
+   "change-mask": [
+    "state",
+    "format",
+    "props"
+   ],
+   "state": "paused",
+   "error": null,
+   "format": {
+    "mediaType": "audio",
+    "mediaSubtype": "dsp",
+    "format": "F32P"
+   },
+   "props": {
+    "client.id": 32,
+    "factory.id": 20,
+    "link.input.node": 43,
+    "link.input.port": 42,
+    "link.output.node": 58,
+    "link.output.port": 59,
+    "link.passive": true,
+    "object.id": 65,
+    "object.serial": 106
+   }
+  }
+ },
+ {
+  "id": 66,
+  "type": "PipeWire:Interface:Link",
+  "version": 3,
+  "permissions": [
+   "r",
+   "x"
+  ],
+  "info": {
+   "output-node-id": 58,
+   "output-port-id": 60,
+   "input-node-id": 43,
+   "input-port-id": 45,
+   "change-mask": [
+    "state",
+    "format",
+    "props"
+   ],
+   "state": "paused",
+   "error": null,
+   "format": {
+    "mediaType": "audio",
+    "mediaSubtype": "dsp",
+    "format": "F32P"
+   },
+   "props": {
+    "client.id": 32,
+    "factory.id": 20,
+    "link.input.node": 43,
+    "link.input.port": 45,
+    "link.output.node": 58,
+    "link.output.port": 60,
+    "link.passive": true,
+    "object.id": 66,
+    "object.serial": 107
+   }
+  }
+ },
+ {
+  "id": 67,
+  "type": "PipeWire:Interface:Client",
+  "version": 3,
+  "permissions": [
+   "r",
+   "w",
+   "x",
+   "m"
+  ],
+  "info": {
+   "change-mask": [
+    "props"
+   ],
+   "props": {
+    "application.name": "pw-dump",
+    "application.process.binary": "pw-dump",
+    "application.process.host": "vm",
+    "application.process.id": 1398,
+    "application.process.user": "root",
+    "clock.power-of-two-quantum": true,
+    "core.name": "pipewire-root-1398",
+    "core.version": "1.0.5",
+    "cpu.max-align": 64,
+    "default.clock.max-quantum": 2048,
+    "default.clock.min-quantum": 32,
+    "default.clock.quantum": 1024,
+    "default.clock.quantum-floor": 4,
+    "default.clock.quantum-limit": 8192,
+    "default.clock.rate": 48000,
+    "default.video.height": 480,
+    "default.video.rate.denom": 1,
+    "default.video.rate.num": 25,
+    "default.video.width": 640,
+    "link.max-buffers": 64,
+    "log.level": 0,
+    "mem.allow-mlock": true,
+    "mem.warn-mlock": false,
+    "module.id": 2,
+    "object.id": 67,
+    "object.serial": 108,
+    "pipewire.access": "unrestricted",
+    "pipewire.protocol": "protocol-native",
+    "pipewire.sec.gid": 0,
+    "pipewire.sec.label": "kernel",
+    "pipewire.sec.pid": 1398,
+    "pipewire.sec.socket": "pipewire-0-manager",
+    "pipewire.sec.uid": 0,
+    "remote.name": "[pipewire-0-manager,pipewire-0]",
+    "settings.check-quantum": false,
+    "settings.check-rate": false
+   }
+  }
+ }
+]

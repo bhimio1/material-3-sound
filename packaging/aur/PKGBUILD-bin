@@ -1,0 +1,23 @@
+# Maintainer: bhimio1
+# Template: the release workflow fills in @PKGVER@ and @SHA256@ and publishes
+# this to the AUR as material-3-sound-bin.
+pkgname=material-3-sound-bin
+pkgver=@PKGVER@
+pkgrel=1
+pkgdesc="Material 3 patchbay and mixer for PipeWire: draw cords between apps, effects and devices"
+arch=('x86_64')
+url="https://github.com/bhimio1/material-3-sound"
+license=('MIT')
+depends=('libxkbcommon' 'wayland' 'libglvnd' 'fontconfig' 'pipewire' 'pipewire-audio' 'wireplumber')
+provides=('material-3-sound')
+conflicts=('material-3-sound' 'material-3-sound-git')
+source=("$pkgname-$pkgver.tar.gz::$url/releases/download/v$pkgver/m3-sound-x86_64-linux.tar.gz")
+sha256sums=('@SHA256@')
+
+package() {
+  cd "m3-sound-x86_64-linux"
+  install -Dm755 m3-sound "$pkgdir/usr/bin/m3-sound"
+  install -Dm644 material_3_sound.desktop "$pkgdir/usr/share/applications/material_3_sound.desktop"
+  install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+  install -Dm644 LICENSE-Inter.txt "$pkgdir/usr/share/licenses/$pkgname/LICENSE-Inter.txt"
+}

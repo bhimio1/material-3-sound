@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Sound
+GenericName=Patchbay and Mixer
+Comment=Draw cords between apps, effects and devices, and mix them
+Exec=m3-sound
+Icon=multimedia-volume-control
+Terminal=false
+Categories=AudioVideo;Audio;Mixer;Settings;
+Keywords=sound;audio;volume;mixer;patchbay;pipewire;equalizer;routing;output;microphone;
+StartupWMClass=material_3_sound
